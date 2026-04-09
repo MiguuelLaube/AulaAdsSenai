@@ -1,0 +1,1 @@
+print("Oi turma do ADS do Senai! Bem-vindos!")
