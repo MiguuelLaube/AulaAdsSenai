@@ -29,7 +29,7 @@ class Banco:
     def abrir_conta(self):
         nome = input ("Digite o nome do titular da conta: ")
         conta = ContaBancaria(nome)
-        self.correntistas.append(conta) #append adiciona a conta à lista de correntistas
+        self.correntistas.append(conta)
         print("Conta aberta com sucesso!!!!!!")
     def encontrar_conta(self, nome):
         for conta in self.correntistas:
@@ -40,10 +40,10 @@ class Banco:
         nome = input("Digite o nome do titular da conta para depósito: ")
         conta = self.encontrar_conta(nome)
         if conta:
-           try:
+            try:
                 valor = float(input("Digite o valor a ser depositado: "))
                 conta.depositar(valor)
-           except ValueError:
+            except ValueError:
                 print("Valor inválido para depósito.")
         else:
             print("Conta não encontrada.")
