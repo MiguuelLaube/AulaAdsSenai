@@ -99,3 +99,4 @@ def main():
             break
         else:
             print("Opção inválida, tente novamente.")
+main()
